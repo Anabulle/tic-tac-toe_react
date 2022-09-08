@@ -52,12 +52,6 @@ body {
   .game {
     display: flex;
     flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  .game-board{
     background-color: rgba(255, 255, 255, 0.75);
     width: 950px;
     margin: auto;
@@ -65,6 +59,32 @@ body {
     border-radius: 10px;
     border:20px groove #ca66c7;
   }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  .game-info div{
+    font-size: 1.5rem;
+    color: #734567;
+  }
+ .game-info ol li button{
+  border: none;
+  background-color: #c9afca;
+  color: #734567;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+ }
+ .game-info ol li{
+  list-style: none;
+ }
+ .game-info ol li button:hover{
+  color: #c9afca;
+  background-color: #734567;
+  transition: all 0.2s ease-in-out;
+ }
   .game-board div{
     width: 500px;
     margin: auto;
