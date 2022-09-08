@@ -44,7 +44,13 @@ body {
   .square:focus {
     outline: none;
   }
-  
+  .square-winning {
+    animation-duration: 1.5s;
+    animation-name: winner;
+    animation-iteration-count: infinite;
+    transition: all 1s ease-in-out;
+
+  }
   .kbd-navigation .square:focus {
     background: #ddd;
   }
@@ -89,3 +95,16 @@ body {
     width: 500px;
     margin: auto;
   }
+  @keyframes winner {
+    from {
+      background-color: #734567;
+      color: #ddd;
+    }
+  
+    to {
+      background-color: #ddd;
+      color: #734567;
+    }
+
+  }
+  
