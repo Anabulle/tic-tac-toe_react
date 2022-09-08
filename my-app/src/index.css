@@ -45,7 +45,7 @@ body {
     outline: none;
   }
   .square-winning {
-    animation-duration: 1.5s;
+    animation-duration: 3.5s;
     animation-name: winner;
     animation-iteration-count: infinite;
     transition: all 1s ease-in-out;
@@ -96,15 +96,19 @@ body {
     margin: auto;
   }
   @keyframes winner {
-    from {
+    0% {      
       background-color: #734567;
-      color: #ddd;
-    }
-  
-    to {
-      background-color: #ddd;
-      color: #734567;
+      color: #b190b2; 
     }
 
+    50% { 
+      background-color: #b190b2;
+      color: #734567; 
+    }
+
+    100% {       
+      background-color: #734567;
+      color: #b190b2; 
+    }
   }
   
